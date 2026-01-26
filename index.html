@@ -1210,19 +1210,19 @@
 
             /* Hero adjustments */
             .hero {
-                min-height: 100svh; /* Use svh for mobile */
+                min-height: auto;
+                height: auto;
+                aspect-ratio: 3 / 4;
             }
 
             .hero-image {
-                object-position: center 80%;
+                object-fit: contain;
+                object-position: center bottom;
+                background: linear-gradient(to bottom, #3a3632, #2a2826);
             }
 
             .hero-scroll {
-                bottom: 2rem;
-            }
-
-            .hero-scroll-line {
-                height: 40px;
+                display: none;
             }
 
             /* Typography improvements */
