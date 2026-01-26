@@ -159,6 +159,24 @@
             max-width: 200px;
         }
 
+        /* Lineup Cards - Special/Collaboration */
+        .lineup-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            box-shadow:
+                0 4px 20px rgba(0, 0, 0, 0.04),
+                0 8px 40px rgba(139, 115, 85, 0.06);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .lineup-card:hover {
+            border-color: var(--accent-wood);
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.08),
+                0 16px 60px rgba(139, 115, 85, 0.1);
+            transform: translateY(-4px);
+        }
+
         /* Decorative Corner - 角装飾 */
         .wa-corner-tl::before,
         .wa-corner-tr::after,
@@ -1529,7 +1547,7 @@
             <!-- Other Options Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 <!-- Special Specification -->
-                <div class="relative border border-[var(--border-subtle)] p-6 md:p-8 hover:border-[var(--accent-wood)] transition-colors wa-corner-tl wa-corner-br">
+                <div class="lineup-card relative p-6 md:p-8 wa-corner-tl wa-corner-br">
                     <p class="text-xs tracking-[0.2em] text-[var(--accent-wood)] mb-4 font-['Cinzel']" data-i18n="lineup.special.label">SPECIAL SPECIFICATION｜特別仕様</p>
                     <p class="text-[var(--text-secondary)] leading-[2.2] text-sm mb-4" data-i18n="lineup.special.description1" data-i18n-html="true">
                         名入れ、金箔仕上げ、着色、<br>
@@ -1545,7 +1563,7 @@
                 </div>
 
                 <!-- Collaboration -->
-                <div class="relative border border-[var(--border-subtle)] p-6 md:p-8 hover:border-[var(--accent-wood)] transition-colors wa-corner-tl wa-corner-br">
+                <div class="lineup-card relative p-6 md:p-8 wa-corner-tl wa-corner-br">
                     <p class="text-xs tracking-[0.2em] text-[var(--accent-wood)] mb-4 font-['Cinzel']" data-i18n="lineup.collab.label">COLLABORATION｜企業コラボレーション</p>
                     <p class="text-[var(--text-secondary)] leading-[2.2] text-sm mb-4" data-i18n="lineup.collab.description1" data-i18n-html="true">
                         MASUKAMEを用いた、<br>
