@@ -1208,17 +1208,20 @@
                 display: none;
             }
 
+            /* Prevent horizontal scroll */
+            html, body {
+                overflow-x: hidden;
+            }
+
             /* Hero adjustments */
             .hero {
-                min-height: auto;
-                height: auto;
-                aspect-ratio: 3 / 4;
+                min-height: 70vh;
+                height: 70vh;
             }
 
             .hero-image {
-                object-fit: contain;
-                object-position: center bottom;
-                background: linear-gradient(to bottom, #3a3632, #2a2826);
+                object-fit: cover;
+                object-position: center center;
             }
 
             .hero-scroll {
