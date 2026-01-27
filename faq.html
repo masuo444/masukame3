@@ -25,6 +25,94 @@
     <meta name="twitter:description" content="MASUKAMEに関するよくあるご質問にお答えします。">
     <meta name="twitter:image" content="https://masukame.fomusglobal.com/ogp.jpg">
 
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "TOP",
+                "item": "https://masukame.fomusglobal.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "FAQ",
+                "item": "https://masukame.fomusglobal.com/faq.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "制作期間はどのくらいですか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Base Objectは約4〜6週間、オプション付きは約6〜8週間、フルカスタムは約8〜12週間が目安です。完全受注生産のため、制作状況により納期が前後する場合がございます。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "価格はいくらですか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Base Objectの価格は、お問い合わせください。特別仕様やコラボレーションについては、ご要望に応じてお見積りいたします。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "海外配送は可能ですか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい、EMSにて海外配送に対応しております。送料は実費となります。配送先によって料金が異なりますので、お問い合わせください。国内（日本）は送料無料です。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "カスタマイズの範囲はどこまでですか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "SPECIAL SPECIFICATION（特別仕様）では、名入れ、金箔仕上げ、着色（色味の調整）、塗装仕上げ、ジュエリーアイの設計が可能です。造形やサイズの変更は対応しておりません。MASUKAMEの形を保ったまま、仕上げ表現と意匠を設計します。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "素材は何を使っていますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "日本産のヒノキ（檜）を使用しています。枡部分は日本の熟練職人が、それ以外のパーツは木材アートデザイナーが、それぞれ手作業で制作しています。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "法人・企業での注文は可能ですか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい、企業コラボレーションとして承っております。周年記念品、VIP顧客への贈答品、ブランドコラボ商品、インバウンド向け土産品などに対応可能です。ロゴ刻印、オリジナルパッケージ、限定シリアル仕様など対応可能です。ノベルティや大量生産を目的とした制作は行っておりません。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "証明書は付属しますか？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "はい、すべての作品にシリアルナンバー入りの証明書が付属します。"
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -299,8 +387,17 @@
         </nav>
     </div>
 
+    <!-- Breadcrumb -->
+    <nav class="pt-24 md:pt-28 px-6" aria-label="Breadcrumb">
+        <ol class="flex items-center justify-center gap-2 text-xs font-['Cinzel'] tracking-wider text-[var(--text-muted)]">
+            <li><a href="index.html" class="hover:text-[var(--accent-wood)] transition-colors">TOP</a></li>
+            <li class="text-[var(--text-subtle)]">&gt;</li>
+            <li class="text-[var(--accent-wood)]">FAQ</li>
+        </ol>
+    </nav>
+
     <!-- Page Header -->
-    <section class="pt-32 pb-12 md:pt-40 md:pb-16 px-6 text-center">
+    <section class="pt-8 pb-12 md:pt-12 md:pb-16 px-6 text-center">
         <p class="section-label">FAQ</p>
         <h1 class="text-2xl md:text-4xl font-light tracking-wide" data-i18n="faq.title">よくあるご質問</h1>
         <div class="separator"></div>

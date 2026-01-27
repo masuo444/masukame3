@@ -25,6 +25,84 @@
     <meta name="twitter:description" content="MASUKAME Standard Edition - 特殊コーティング加工済み。USD $950">
     <meta name="twitter:image" content="https://masukame.fomusglobal.com/ogp.jpg">
 
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "TOP",
+                "item": "https://masukame.fomusglobal.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "LINEUP",
+                "item": "https://masukame.fomusglobal.com/#lineup"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Standard Edition",
+                "item": "https://masukame.fomusglobal.com/standard.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - Product -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "MASUKAME Standard Edition",
+        "description": "MASUKAME Standard Editionは、日本産ヒノキを使用し完全受注生産で制作される工芸オブジェクト。特殊コーティング加工済み。",
+        "image": "https://masukame.fomusglobal.com/ogp.jpg",
+        "brand": {
+            "@type": "Brand",
+            "name": "MASUKAME"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "MASUKAME"
+        },
+        "material": "Japanese Hinoki (Cypress)",
+        "countryOfOrigin": "JP",
+        "offers": {
+            "@type": "Offer",
+            "url": "https://masukame.fomusglobal.com/standard.html",
+            "priceCurrency": "USD",
+            "price": "1050",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/PreOrder",
+            "itemCondition": "https://schema.org/NewCondition",
+            "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry": "Worldwide"
+                },
+                "doesNotShip": false
+            }
+        },
+        "additionalProperty": [
+            {
+                "@type": "PropertyValue",
+                "name": "Production Type",
+                "value": "Made to Order"
+            },
+            {
+                "@type": "PropertyValue",
+                "name": "Coating",
+                "value": "Special Coating Applied"
+            }
+        ]
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -296,8 +374,19 @@
         </nav>
     </div>
 
+    <!-- Breadcrumb -->
+    <nav class="pt-24 md:pt-28 px-6" aria-label="Breadcrumb">
+        <ol class="flex items-center justify-center gap-2 text-xs font-['Cinzel'] tracking-wider text-[var(--text-muted)]">
+            <li><a href="index.html" class="hover:text-[var(--accent-wood)] transition-colors">TOP</a></li>
+            <li class="text-[var(--text-subtle)]">&gt;</li>
+            <li><a href="index.html#lineup" class="hover:text-[var(--accent-wood)] transition-colors">LINEUP</a></li>
+            <li class="text-[var(--text-subtle)]">&gt;</li>
+            <li class="text-[var(--accent-wood)]">Standard Edition</li>
+        </ol>
+    </nav>
+
     <!-- Page Header -->
-    <section class="pt-32 pb-12 md:pt-40 md:pb-16 px-6 text-center">
+    <section class="pt-8 pb-12 md:pt-12 md:pb-16 px-6 text-center">
         <p class="section-label">STANDARD EDITION</p>
         <h1 class="font-['Cinzel'] text-3xl md:text-5xl tracking-[0.15em] font-normal mb-4">MASUKAME</h1>
         <div class="separator"></div>
@@ -348,7 +437,7 @@
                 </li>
                 <li class="flex gap-4 items-start">
                     <span class="block w-1.5 h-1.5 rounded-full bg-[var(--accent-wood)] opacity-40 mt-3 shrink-0"></span>
-                    <span data-i18n="standard.specs.finish"><strong>仕上げ：特殊コーティング加工済み</strong></span>
+                    <span data-i18n="standard.specs.finish">仕上げ：特殊コーティング加工済み</span>
                 </li>
                 <li class="flex gap-4 items-start">
                     <span class="block w-1.5 h-1.5 rounded-full bg-[var(--accent-wood)] opacity-40 mt-3 shrink-0"></span>
@@ -368,15 +457,6 @@
         </div>
     </section>
 
-    <!-- Included Section -->
-    <section class="py-12 md:py-16 px-6">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-lg md:text-xl font-light tracking-wide mb-6" data-i18n="standard.included.title">付属物</h2>
-            <p class="text-sm text-[var(--text-secondary)]" data-i18n="standard.included.item">シリアルナンバー入り証明書</p>
-        </div>
-    </section>
-
-    <div class="wa-divider"></div>
 
     <!-- Production & Shipping -->
     <section class="py-12 md:py-16 px-6" style="background-color: var(--bg-secondary);">
@@ -392,7 +472,7 @@
                 </li>
                 <li class="flex gap-4 items-start">
                     <span class="block w-1.5 h-1.5 rounded-full bg-[var(--accent-wood)] opacity-40 mt-3 shrink-0"></span>
-                    <span data-i18n="standard.shipping.period">制作期間：約 <strong>1〜3ヶ月</strong></span>
+                    <span data-i18n="standard.shipping.period" data-i18n-html="true">制作期間：約 <strong>1〜3ヶ月</strong></span>
                 </li>
                 <li class="flex gap-4 items-start">
                     <span class="block w-1.5 h-1.5 rounded-full bg-[var(--accent-wood)] opacity-40 mt-3 shrink-0"></span>
@@ -400,9 +480,7 @@
                 </li>
             </ul>
 
-            <div class="wa-divider"></div>
-
-            <p class="text-center text-xs text-[var(--text-muted)]" data-i18n="standard.shipping.note">
+            <p class="text-center text-xs text-[var(--text-muted)] mt-6" data-i18n="standard.shipping.note">
                 ※ 関税・VATなどの輸入時税金は含まれていません。
             </p>
         </div>
@@ -410,10 +488,15 @@
 
     <!-- Price Section -->
     <section class="py-16 md:py-20 px-6">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-lg md:text-xl font-light tracking-wide mb-8" data-i18n="standard.price.title">価格</h2>
-            <p class="price-display mb-4">USD $950</p>
-            <p class="text-xs text-[var(--text-muted)] tracking-wider" data-i18n="standard.price.note">International shipping included</p>
+        <div class="max-w-md mx-auto">
+            <div class="bg-[var(--bg-secondary)] border border-[var(--border-subtle)] rounded-lg p-8 md:p-10 text-center shadow-lg">
+                <h2 class="text-base font-light tracking-widest text-[var(--text-muted)] mb-6" data-i18n="standard.price.title">価格</h2>
+                <p class="price-display">USD $1,050</p>
+                <p class="text-xs text-[var(--text-muted)] tracking-wider mt-4 mb-8" data-i18n="standard.price.note">国際送料 $100 込み</p>
+                <a href="https://buy.stripe.com/5kQ7sM6QZ6fPb0oaYj4ko0K" target="_blank" rel="noopener" class="btn-purchase">
+                    <span data-i18n="standard.purchase.btn">Purchase Standard Edition</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -441,7 +524,7 @@
             </div>
 
             <div class="text-center">
-                <a href="mailto:contact@fomus.jp?subject=MASUKAME Standard Edition 購入希望" class="btn-purchase">
+                <a href="https://buy.stripe.com/5kQ7sM6QZ6fPb0oaYj4ko0K" target="_blank" rel="noopener" class="btn-purchase">
                     <span data-i18n="standard.purchase.btn">Purchase Standard Edition</span>
                 </a>
             </div>
@@ -527,19 +610,17 @@
                 'standard.about.p3': '特別な装飾や意匠を加えない、<br>MASUKAMEの思想と形を最も純粋に表した仕様です。',
                 'standard.specs.title': '素材・制作',
                 'standard.specs.material': '素材：日本産ヒノキ',
-                'standard.specs.finish': '<strong>仕上げ：特殊コーティング加工済み</strong>',
+                'standard.specs.finish': '仕上げ：特殊コーティング加工済み',
                 'standard.specs.production': '制作：日本の熟練した職人による手作業',
                 'standard.specs.method': '生産方式：完全受注生産',
                 'standard.specs.note': '※ 工業製品ではありません。<br>木目や仕上がりには個体差があります。',
-                'standard.included.title': '付属物',
-                'standard.included.item': 'シリアルナンバー入り証明書',
                 'standard.shipping.title': '制作・配送について',
                 'standard.shipping.start': '入金確認後に制作開始',
                 'standard.shipping.period': '制作期間：約 <strong>1〜3ヶ月</strong>',
                 'standard.shipping.delivery': '日本から海外へ直接発送',
                 'standard.shipping.note': '※ 関税・VATなどの輸入時税金は含まれていません。',
                 'standard.price.title': '価格',
-                'standard.price.note': '国際送料込み',
+                'standard.price.note': '国際送料 $100 込み',
                 'standard.purchase.title': '購入について',
                 'standard.purchase.p1': 'Standard Editionは、<br>本ページから直接ご購入いただける<br><strong>唯一のMASUKAME</strong>です。',
                 'standard.purchase.p2': '仕上げ表現や意匠の設計をご希望の場合は、<br><a href="special.html" class="text-[var(--accent-wood)] border-b border-[var(--accent-wood)]">Special Specification</a> または <a href="collaboration.html" class="text-[var(--accent-wood)] border-b border-[var(--accent-wood)]">Collaboration</a> をご覧ください。',
@@ -561,19 +642,17 @@
                 'standard.about.p3': 'Without special decoration or design,<br>this edition represents the purest expression of MASUKAME\'s philosophy and form.',
                 'standard.specs.title': 'Materials & Production',
                 'standard.specs.material': 'Material: Japanese Hinoki Cypress',
-                'standard.specs.finish': '<strong>Finish: Special Coating Applied</strong>',
+                'standard.specs.finish': 'Finish: Special Coating Applied',
                 'standard.specs.production': 'Production: Handcrafted by skilled Japanese artisans',
                 'standard.specs.method': 'Production Method: Made to Order',
                 'standard.specs.note': '※ This is not an industrial product.<br>Each piece has natural variations in grain and finish.',
-                'standard.included.title': 'Included',
-                'standard.included.item': 'Certificate with Serial Number',
                 'standard.shipping.title': 'Production & Shipping',
                 'standard.shipping.start': 'Production begins after payment confirmation',
                 'standard.shipping.period': 'Production Period: Approximately <strong>1–3 months</strong>',
                 'standard.shipping.delivery': 'Direct shipping from Japan worldwide',
                 'standard.shipping.note': '※ Import duties and VAT are not included.',
                 'standard.price.title': 'Price',
-                'standard.price.note': 'International shipping included',
+                'standard.price.note': 'Includes $100 international shipping',
                 'standard.purchase.title': 'How to Purchase',
                 'standard.purchase.p1': 'Standard Edition is<br>the <strong>only MASUKAME</strong><br>available for direct purchase from this page.',
                 'standard.purchase.p2': 'For custom finishes or bespoke design,<br>please see <a href="special.html" class="text-[var(--accent-wood)] border-b border-[var(--accent-wood)]">Special Specification</a> or <a href="collaboration.html" class="text-[var(--accent-wood)] border-b border-[var(--accent-wood)]">Collaboration</a>.',
@@ -595,19 +674,17 @@
                 'standard.about.p3': 'Sans décoration ni design spécial,<br>cette édition représente l\'expression la plus pure de la philosophie et de la forme de MASUKAME.',
                 'standard.specs.title': 'Matériaux & Production',
                 'standard.specs.material': 'Matériau : Cyprès Hinoki Japonais',
-                'standard.specs.finish': '<strong>Finition : Revêtement Spécial Appliqué</strong>',
+                'standard.specs.finish': 'Finition : Revêtement Spécial Appliqué',
                 'standard.specs.production': 'Production : Fabriqué à la main par des artisans japonais qualifiés',
                 'standard.specs.method': 'Méthode de Production : Fabriqué sur Commande',
                 'standard.specs.note': '※ Ce n\'est pas un produit industriel.<br>Chaque pièce présente des variations naturelles.',
-                'standard.included.title': 'Inclus',
-                'standard.included.item': 'Certificat avec Numéro de Série',
                 'standard.shipping.title': 'Production & Livraison',
                 'standard.shipping.start': 'La production commence après confirmation du paiement',
                 'standard.shipping.period': 'Délai de Production : Environ <strong>1–3 mois</strong>',
                 'standard.shipping.delivery': 'Expédition directe du Japon dans le monde entier',
                 'standard.shipping.note': '※ Les droits de douane et la TVA ne sont pas inclus.',
                 'standard.price.title': 'Prix',
-                'standard.price.note': 'Livraison internationale incluse',
+                'standard.price.note': 'Livraison internationale incluse ($100)',
                 'standard.purchase.title': 'Comment Acheter',
                 'standard.purchase.p1': 'Standard Edition est<br>le <strong>seul MASUKAME</strong><br>disponible à l\'achat direct depuis cette page.',
                 'standard.purchase.p2': 'Pour des finitions personnalisées ou un design sur mesure,<br>veuillez consulter <a href="special.html" class="text-[var(--accent-wood)] border-b border-[var(--accent-wood)]">Special Specification</a> ou <a href="collaboration.html" class="text-[var(--accent-wood)] border-b border-[var(--accent-wood)]">Collaboration</a>.',
@@ -629,19 +706,17 @@
                 'standard.about.p3': 'بدون زخرفة أو تصميم خاص،<br>يمثل هذا الإصدار أنقى تعبير عن فلسفة وشكل ماسوكامي.',
                 'standard.specs.title': 'المواد والإنتاج',
                 'standard.specs.material': 'المادة: خشب الهينوكي الياباني',
-                'standard.specs.finish': '<strong>التشطيب: طلاء خاص مطبق</strong>',
+                'standard.specs.finish': 'التشطيب: طلاء خاص مطبق',
                 'standard.specs.production': 'الإنتاج: مصنوع يدوياً بواسطة حرفيين يابانيين مهرة',
                 'standard.specs.method': 'طريقة الإنتاج: مصنوع حسب الطلب',
                 'standard.specs.note': '※ هذا ليس منتجاً صناعياً.<br>كل قطعة لها اختلافات طبيعية.',
-                'standard.included.title': 'مرفق',
-                'standard.included.item': 'شهادة برقم تسلسلي',
                 'standard.shipping.title': 'الإنتاج والشحن',
                 'standard.shipping.start': 'يبدأ الإنتاج بعد تأكيد الدفع',
                 'standard.shipping.period': 'فترة الإنتاج: حوالي <strong>1-3 أشهر</strong>',
                 'standard.shipping.delivery': 'شحن مباشر من اليابان إلى جميع أنحاء العالم',
                 'standard.shipping.note': '※ الرسوم الجمركية وضريبة القيمة المضافة غير مشمولة.',
                 'standard.price.title': 'السعر',
-                'standard.price.note': 'الشحن الدولي مشمول',
+                'standard.price.note': 'يشمل الشحن الدولي ($100)',
                 'standard.purchase.title': 'كيفية الشراء',
                 'standard.purchase.p1': 'الإصدار القياسي هو<br><strong>ماسوكامي الوحيد</strong><br>المتاح للشراء المباشر من هذه الصفحة.',
                 'standard.purchase.p2': 'للتشطيبات المخصصة أو التصميم حسب الطلب،<br>يرجى مراجعة <a href="special.html" class="text-[var(--accent-wood)] border-b border-[var(--accent-wood)]">المواصفات الخاصة</a> أو <a href="collaboration.html" class="text-[var(--accent-wood)] border-b border-[var(--accent-wood)]">التعاون</a>.',

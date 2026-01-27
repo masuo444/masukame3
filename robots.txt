@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://masukame.fomusglobal.com/sitemap.xml

@@ -29,6 +29,31 @@
     <meta name="twitter:description" content="MASUKAMEは、日本の伝統工芸「枡」と「亀」を組み合わせたクラフトオブジェ。繁栄と長寿の願いを込めた逸品です。">
     <meta name="twitter:image" content="https://masukame.fomusglobal.com/ogp.jpg">
 
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MASUKAME",
+        "url": "https://masukame.fomusglobal.com/",
+        "logo": "https://masukame.fomusglobal.com/ogp.jpg",
+        "description": "MASUKAMEは、日本の伝統工芸「枡」と「亀」を組み合わせたクラフトオブジェ。日本産ヒノキを使用し、熟練職人が一点ずつ手作りで仕上げます。",
+        "foundingCountry": "JP",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@fomus.jp",
+            "contactType": "customer service",
+            "availableLanguage": ["Japanese", "English", "French", "Arabic"]
+        },
+        "sameAs": [],
+        "brand": {
+            "@type": "Brand",
+            "name": "MASUKAME",
+            "description": "Japanese Traditional Craft Object combining Masu (wooden measuring cup) and Kame (turtle)"
+        }
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -1628,12 +1653,12 @@
                 <div class="text-center md:text-left">
                     <h3 class="text-sm tracking-widest mb-4 text-[var(--text-primary)]" data-i18n="production.shipping.title">配送</h3>
                     <ul class="text-sm text-[var(--text-secondary)] space-y-2">
-                        <li data-i18n="production.shipping.domestic">国内：送料無料</li>
-                        <li data-i18n="production.shipping.international">海外：EMS対応（実費）</li>
+                        <li data-i18n="production.shipping.worldwide">日本から世界各国へ発送</li>
                     </ul>
                 </div>
             </div>
             <p class="text-center text-xs text-[var(--text-muted)] mt-8" data-i18n="production.note">※完全受注生産のため、制作状況により納期が前後する場合がございます</p>
+            <p class="text-center text-xs text-[var(--text-muted)] mt-2" data-i18n="production.tax_note">※関税・VATなどの輸入時税金は含まれていません</p>
         </div>
     </section>
 
@@ -1730,9 +1755,9 @@
                 'production.period.options': 'Options付き：約6〜8週間',
                 'production.period.custom': 'Full Custom：約8〜12週間',
                 'production.shipping.title': '配送',
-                'production.shipping.domestic': '国内：送料無料',
-                'production.shipping.international': '海外：EMS対応（実費）',
+                'production.shipping.worldwide': '日本から世界各国へ発送',
                 'production.note': '※完全受注生産のため、制作状況により納期が前後する場合がございます',
+                'production.tax_note': '※関税・VATなどの輸入時税金は含まれていません',
                 'contact.label': 'CONTACT',
                 'contact.title': 'お問い合わせ',
                 'contact.description': 'MASUKAMEに関するご質問・ご相談は<br>下記よりお気軽にお問い合わせください。',
@@ -1777,9 +1802,9 @@
                 'production.period.options': 'With Options: Approx. 6-8 weeks',
                 'production.period.custom': 'Full Custom: Approx. 8-12 weeks',
                 'production.shipping.title': 'Shipping',
-                'production.shipping.domestic': 'Domestic (Japan): Free shipping',
-                'production.shipping.international': 'International: EMS (actual cost)',
+                'production.shipping.worldwide': 'Shipped worldwide from Japan',
                 'production.note': '*As all items are made to order, delivery times may vary depending on production status',
+                'production.tax_note': '*Import duties and VAT are not included',
                 'contact.label': 'CONTACT',
                 'contact.title': 'Contact Us',
                 'contact.description': 'For inquiries about MASUKAME,<br>please feel free to contact us below.',
@@ -1824,9 +1849,9 @@
                 'production.period.options': 'Avec Options : Env. 6-8 semaines',
                 'production.period.custom': 'Sur Mesure : Env. 8-12 semaines',
                 'production.shipping.title': 'Livraison',
-                'production.shipping.domestic': 'Japon : Livraison gratuite',
-                'production.shipping.international': 'International : EMS (frais réels)',
+                'production.shipping.worldwide': 'Expédition mondiale depuis le Japon',
                 'production.note': '*Tous les articles étant fabriqués sur commande, les délais peuvent varier selon la production',
+                'production.tax_note': '*Les droits de douane et la TVA ne sont pas inclus',
                 'contact.label': 'CONTACT',
                 'contact.title': 'Nous Contacter',
                 'contact.description': 'Pour toute question sur MASUKAME,<br>n\'hésitez pas à nous contacter ci-dessous.',
@@ -1871,9 +1896,9 @@
                 'production.period.options': 'مع الخيارات: حوالي 6-8 أسابيع',
                 'production.period.custom': 'مخصص بالكامل: حوالي 8-12 أسبوع',
                 'production.shipping.title': 'الشحن',
-                'production.shipping.domestic': 'اليابان: شحن مجاني',
-                'production.shipping.international': 'دولي: EMS (التكلفة الفعلية)',
+                'production.shipping.worldwide': 'شحن عالمي من اليابان',
                 'production.note': '*جميع المنتجات مصنوعة حسب الطلب، قد تختلف مواعيد التسليم حسب حالة الإنتاج',
+                'production.tax_note': '*الرسوم الجمركية وضريبة القيمة المضافة غير مشمولة',
                 'contact.label': 'اتصل بنا',
                 'contact.title': 'تواصل معنا',
                 'contact.description': 'لأي استفسار حول ماسوكامي،<br>لا تتردد في التواصل معنا أدناه.',

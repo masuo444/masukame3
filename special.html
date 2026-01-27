@@ -25,6 +25,34 @@
     <meta name="twitter:description" content="名入れ、金箔仕上げ、着色など、一体ずつ設計する特別な仕様です。">
     <meta name="twitter:image" content="https://masukame.fomusglobal.com/ogp.jpg">
 
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "TOP",
+                "item": "https://masukame.fomusglobal.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "LINEUP",
+                "item": "https://masukame.fomusglobal.com/#lineup"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Special Specification",
+                "item": "https://masukame.fomusglobal.com/special.html"
+            }
+        ]
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -284,8 +312,19 @@
         </nav>
     </div>
 
+    <!-- Breadcrumb -->
+    <nav class="pt-24 md:pt-28 px-6" aria-label="Breadcrumb">
+        <ol class="flex items-center justify-center gap-2 text-xs font-['Cinzel'] tracking-wider text-[var(--text-muted)]">
+            <li><a href="index.html" class="hover:text-[var(--accent-wood)] transition-colors">TOP</a></li>
+            <li class="text-[var(--text-subtle)]">&gt;</li>
+            <li><a href="index.html#lineup" class="hover:text-[var(--accent-wood)] transition-colors">LINEUP</a></li>
+            <li class="text-[var(--text-subtle)]">&gt;</li>
+            <li class="text-[var(--accent-wood)]">Special Specification</li>
+        </ol>
+    </nav>
+
     <!-- Page Header -->
-    <section class="pt-32 pb-12 md:pt-40 md:pb-16 px-6 text-center">
+    <section class="pt-8 pb-12 md:pt-12 md:pb-16 px-6 text-center">
         <p class="section-label">SPECIAL SPECIFICATION</p>
         <h1 class="text-2xl md:text-4xl font-light tracking-wide mb-2 font-['Cinzel']" data-i18n="special.title">特別仕様について</h1>
     </section>
